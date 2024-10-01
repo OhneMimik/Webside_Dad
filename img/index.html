@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                font-family: "Roboto", sans-serif;
+
+            }
+            .header-image {
+                height: 100vh;
+                width: 100%;
+                object-fit: cover;
+                filter: brightness(0.5);
+            }
+            .container {
+                position: absolute;
+                left: 32px;  /* Optimiert auf linksbündig statt rechtsbündig */
+                top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: calc(100% - 64px); /* Container nimmt die gesamte Breite ein */
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px 20px;
+                border-radius: 5px;
+    
+            }
+            .logo {
+                height: 50px;  /* Logo Höhe */
+                margin-bottom: 20px;
+            }
+            .menu-link {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+            .menu-link:hover {
+                text-decoration: underline;
+            }
+            .headline{
+                position: absolute;
+                left: 50px;
+                top: 300px;
+                color: white;
+                font-size: 70px;
+                width: 500px;
+                text-shadow: 15px 15px 8px rgba(0, 0, 0, 0,5)
+            }
+            .red {
+                color: red;
+            }
+            .description-section {
+                height: 500px;
+                padding: 30px 100px;
+                display: flex;
+            }
+            .button {
+                background-color: #ffdd03;
+                padding: 8px;
+                color: black;
+                border-radius: 8px;
+                box-shadow: 15px 15px 8px rgba(0, 0, 0, 0,5);
+            }
+            .half-width {
+                width: 50%;
+            }
+            h2 {
+                text-align: center;
+                font-size: 45px;
+            }
+            iframe {
+            width: 100%; /* Füllt den Container aus */
+            height: 315px; /* Standard-YouTube-Video-Höhe */
+            border: none; 
+            }
+        
+
+            
+        </style>
+    </head>
+    <body>
+        <img class="header-image" src="https://www.dropbox.com/scl/fi/fqj03ymrzt5vk5hrqxk0z/Mongus2.jpg?rlkey=1e4fdn1b8i6xaxo50hj5sxx6a&st=37o9mqj7&dl=0" alt="Header Image">
+        <div class="container">
+            <img src="https://www.dropbox.com/scl/fi/1q9q2xisz8gfuxpg833ho/Cat-logo.png?rlkey=fxzwml8cvr9s15iown7fdbd8e&st=6ti8zyn7&dl=0" class="logo">
+            <div>
+                <a class="menu-link" href="#home">Home</a>
+                <a class="menu-link" href="#contact">Kontakt</a>
+                <a class="menu-link" href="#impressum">Impressum</a>
+                <a class="menu-link button" href="#phone">Telefon</a>
+            </div>
+        </div>
+        <h1 class="headline"> Katzen sind die <Span class="red">Krassesten</Span> Tiere der Welt</h1>
+        <h2>Anfahrt</h2>
+
+        <div class="description-section">
+            <div class="half-width">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum fugiat error possimus saepe ipsum? Esse optio praesentium saepe odit facere! Fugiat ab deleniti inventore provident ut illo quos maiores tenetur!          
+       
+            </div>
+            <iframe class="left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2396.541509080109!2d8.81010727714387!3d53.08250909443114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b128124249ff87%3A0x3e27d50158558ad1!2sBremen%20Hauptbahnhof!5e0!3m2!1sde!2sde!4v1725226131083!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2>Video</h2>
+            <div class="description-section">
+                <div class="half-width">
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum fugiat error possimus saepe ipsum? Esse optio praesentium saepe odit facere! Fugiat ab deleniti inventore provident ut illo quos maiores tenetur!          
+           
+                </div>
+                
+            </div>
+            <iframe class="half-width" src="https://www.youtube.com/embed/A12izyKODeE?si=RItK-U3iSm0PU2G8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+
+    </body>
+</html>
